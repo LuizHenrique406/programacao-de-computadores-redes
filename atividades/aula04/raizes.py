@@ -1,3 +1,5 @@
+print("Código feito para calcular x1 e x2")
+
 a = float(input("Digite o valor de a: "))
 b = float(input("Digite o valor de b: "))
 c = float(input("Digite o valor de c: "))
