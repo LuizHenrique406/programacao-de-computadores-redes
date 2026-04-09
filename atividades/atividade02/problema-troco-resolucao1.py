@@ -8,6 +8,6 @@ dig3 = num // 10
 num = num % 10
 dig4 = num % 10
 
-soma = dig1 + dig2 + dig3 + dig4
+soma = dig1 + dig2 + dig3 + dig4 
 
 print("soma: ", soma)
