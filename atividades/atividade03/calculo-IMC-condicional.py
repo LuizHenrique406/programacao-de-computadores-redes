@@ -10,7 +10,7 @@ if imc < 18.5:
 else:
     if imc <= 24.9:
         print("NORMAL")
-        else;
+        else:
             print("SOBREPESO")
             if imc <= 34.9:
                 print("OBESIDADE GRAU I")
