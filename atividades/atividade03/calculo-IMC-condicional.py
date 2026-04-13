@@ -1,9 +1,9 @@
 print("Esse programa calcula o Índice de Massa Corporal")
-
 peso = float(input("Coloque o seu peso: "))
 altura = float(input("Coloque a sua altura: "))
 
-imc = peso / (altura * altura)
+imc = peso / (altura**2)
+print("O seu IMC é: ", imc)
 
 if imc < 18.5:
     print("MAGRESA")
