@@ -1,15 +1,20 @@
-print("Calculadora de Índice de Massa Corporal em idosos")
+print("Esse programa calcula o Índice de Massa Corporal")
 
-peso = int(input("Coloque o seu peso: "))
+peso = float(input("Coloque o seu peso: "))
 altura = float(input("Coloque a sua altura: "))
 
-IMC = peso / (altura * altura)
+imc = peso / (altura * altura)
 
-if IMC < 22:
-    print("Baixo peso")
-if IMC >= 22 and IMC <= 27:
-    print("Peso Adequado")
-if IMC >= 27 and IMC <= 29:
-    print("Sobrepeso")
-if IMC > 30:
-    print("Obesidade")
+if imc < 18.5:
+    print("MAGRESA")
+else:
+    if imc <= 24.9:
+        print("NORMAL")
+        else;
+            print("SOBREPESO")
+            if imc <= 34.9:
+                print("OBESIDADE GRAU I")
+                else:
+                    print("OBESIDADE GRAU II")
+                        if imc > 40:
+                            print("OBESIDADE III")
