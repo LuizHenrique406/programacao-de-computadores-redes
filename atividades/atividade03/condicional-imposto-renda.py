@@ -1,6 +1,6 @@
 print("Esse programa calcula o seu imposto de renda")
 
-renda = float(input("Coloque o seu salário mensal: "))
+renda = float(input("Digite o seu salário mensal: "))
 
 if renda < 2428.80:
     print("Não precisa pagar imposto de renda")
@@ -14,5 +14,5 @@ elif renda <= 4664.68:
     imposto_renda3 = renda * 22.5 / 100 - 675.49
     print("Você irá precisar pagar: ", imposto_renda3)
 else:
-    imposto_renda4 = renda * 27.5 / 100 - 908,73
+    imposto_renda4 = renda * 27.5 / 100 - 908.73
     print("Você irá precisar pagar: ", imposto_renda4)
