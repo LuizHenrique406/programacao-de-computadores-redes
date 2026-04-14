@@ -14,6 +14,6 @@ else:
                       if renda <= 4.664.68:
                             imoposto_renda3 = renda * 22.5 / 100 - 675.49
                             print("Você irá precisar pagar: "), imposto_renda3)
-                                else renda > 4.664.68:
+                                else:  
                                     imposto_renda4 = renda * 27.5 / 100 - 908,73
                                     print("Você irá precisar pagar: "), imposto_renda4)
