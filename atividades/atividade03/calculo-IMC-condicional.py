@@ -12,10 +12,13 @@ else:
     if imc <= 24.9:
         print("NORMAL")
     else:
-        print("SOBREPESO")
-        if imc <= 34.9:
-            print("OBESIDADE GRAU I")
+        if imc <= 29.9:
+            print("SOBREPESO")
         else:
-            print("OBESIDADE GRAU II")
-            if imc > 40:
-                print("OBESIDADE III")
+            if imc <= 34.9:
+                print("OBESIDADE GRAU I")
+            else:
+                if imc <= 39.9:
+                    print("OBESIDADE GRAU II")
+                else:
+                    print("OBESIDADE III")
