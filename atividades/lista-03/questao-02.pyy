@@ -1,0 +1,18 @@
+print("Esse programa avalia se um Estudante do IFRN foi aprovado ou reprovado")
+nota_unidade1 = float(input("Digite a nota da sua primeira unidade: "))
+nota_unidade2 = float(input("Digite a nota da sua segunda unidade: "))
+
+md = (2 * nota_unidade1 + 3 * nota_unidade2) / 5
+
+if md >= 60:
+    print("APROVADO")
+else:
+    print("PROVA FINAL")
+    nota_final = float(input("Digite sua nota de avaliação final: "))
+
+    mdf = nota_final + md / 2
+    
+    if mdf >= 60:
+        print("ARPOVADO NA AVALIAÇÃO FINAL")
+    else:
+        print("ALUNO REPROVADO")
