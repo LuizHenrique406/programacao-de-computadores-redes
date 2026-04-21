@@ -9,7 +9,7 @@ if md >= 60:
 else:
     print("PROVA FINAL")
     nota_final = float(input("Digite sua nota de avaliação final: "))
-
+    
     mdf = nota_final + md / 2
     
     if mdf >= 60:
