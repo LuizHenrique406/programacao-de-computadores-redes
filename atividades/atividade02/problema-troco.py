@@ -7,14 +7,14 @@ troco = valor_pago - valor_conta
 print("O valor do troco é: ", troco)
 
 ced200 = troco // 200
-print("#ced200: ", 200)
+print("#ced200: ", ced200)
 troco = troco % 200
 
-ced200 = troco // 100
-print("#ced100: ", 100)
+ced100 = troco // 100
+print("#ced100: ", ced100)
 troco = troco % 100
 
-ced200 = troco // 2
-print("#ced2: ", 2)
+ced2 = troco // 2
+print("#ced2: ", ced2)
 troco = troco % 2
 print("#moedas1: ", troco)
