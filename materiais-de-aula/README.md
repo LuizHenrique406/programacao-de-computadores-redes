@@ -1,1 +1,1 @@
-
+# Todos os conceitos passados em aula
