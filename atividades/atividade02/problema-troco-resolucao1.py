@@ -1,4 +1,4 @@
-num = int(input("Número: ")
+num = int(input("Número: "))
 					
 dig1 = num // 1000
 num = num % 1000

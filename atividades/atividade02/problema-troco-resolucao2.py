@@ -1,4 +1,4 @@
-num = int(input("Número: ")
+num = int(input("Número: "))
 
 dig4 = num % 10
 num = num // 10
