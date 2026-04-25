@@ -10,11 +10,11 @@ ced200 = troco // 200
 print("#ced200: ", ced200)
 troco = troco % 200
 
-ced200 = troco // 100
-print("#ced100: ", ced200)
+ced100 = troco // 100
+print("#ced100: ", ced100)
 troco = troco % 100
 
-ced200 = troco // 2
-print("#ced2: ", ced200)
+ced2 = troco // 2
+print("#ced2: ", ced2)
 troco = troco % 2
 print("#moedas1: ", troco)
