@@ -1,7 +1,5 @@
 print("Esse programa acha o número primo na posição 137")
 
-div = 1
-num = 2
 contagem_num = 0
 ndiv = 0
 
@@ -19,5 +17,4 @@ while contagem_num < 137:
 
     num = num + 1
     
-if contagem_num == 137:
-        print("O número primo da posição 137 é", num - 1)
+print("O número primo da posição 137 é", num - 1)
