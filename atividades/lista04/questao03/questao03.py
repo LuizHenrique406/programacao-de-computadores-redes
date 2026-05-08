@@ -10,13 +10,14 @@ while num >= 2:
     if num % 2 == 0:
         num = num // 2
         veri_termos = veri_termos + 1
-        print(num)
     else:
         num = 3 * num + 1
         veri_termos = veri_termos + 1
-        print(num)
 
     if veri_termos == 5:
         termo5 = num
-
-print("Esse número tem", veri_termos, "de sequência", "e seu 5° termo é", termo5)
+        
+if termo5 == True:
+    print("Esse número tem", veri_termos, "de sequência", "e seu 5° termo é", termo5)
+else:
+    print("Esse número tem", veri_termos, "de sequência")
