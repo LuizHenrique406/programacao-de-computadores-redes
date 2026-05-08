@@ -18,6 +18,5 @@ while num1 < 1000001:
     else:
         num_invertido = 0
         num1 = num1 + 1
-    
-    
+
 print("Existem", contagem_poli, "políndromos entre 10 e 1000000")
