@@ -1,7 +1,4 @@
-#for i in range(10):
-#   print(f"Tabuada do {i}")
-#  for j in range(10):
-#      print(f"{i} * {j}: {i*j}")
+
 
 maior_palindromo = 0
 
