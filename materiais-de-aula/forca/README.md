@@ -1,0 +1,1 @@
+# forca com for e leitura de strings
