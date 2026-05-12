@@ -2,7 +2,7 @@ import random
 
 print("Seu objetivo é acertar a palavra sorteada")
 palavras = [ "ARARA", "TURMA", "LIMÃO", "ABACAXI"]
-sorteada = palavras[    random.randint(0,3)]
+sorteada = palavras[random.randint(0,3)]
 digitada = "_" * len(sorteada)
 
 while digitada != sorteada:
