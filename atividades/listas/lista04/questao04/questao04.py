@@ -59,6 +59,6 @@ while time1 > 0 and time2 > 0 and time3 > 0 and time4 > 0:
 
 latencia_med = soma / med
 
-print("A latência média foi de", latencia_med)
+print(f"A latência média foi de {latencia_med:.0f}")
 print("E seu ping mais rápido foi de", ping_rapido)
-print("O menor Jitter da sequência foi", menor_jitter)
+print(f"O menor Jitter da sequência foi {menor_jitter: .0f}")
