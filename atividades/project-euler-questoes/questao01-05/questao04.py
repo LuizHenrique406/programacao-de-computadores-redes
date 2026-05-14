@@ -1,3 +1,5 @@
+print("Esse programa encontra o maior palíndromo")
+
 maior_palindromo = 0
 
 for i in range(100,1000):

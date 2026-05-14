@@ -1,3 +1,4 @@
+print("Esse programa encontra qual é o maior fator primo")
 div = 2
 num = int(input("Digite um número: "))
 maior = 2
