@@ -5,7 +5,7 @@ palavras = [ "ARARA", "TURMA", "LIMÃO", "ABACAXI"]
 sorteada = palavras[random.randint(0,3)]
 digitada = "_" * len(sorteada)
 
-tentativas = 1
+tentativas = 0
 
 while tentativas < 5:
 
@@ -16,12 +16,12 @@ while tentativas < 5:
         if sorteada[pos] == letra:
             digitada = digitada[:pos] + letra + digitada[pos+1:]
 
-    if sorteada == digitada:
-        break
-    
     tentativas = tentativas + 1
 
+    if sorteada == digitada:
+        break
+
 if digitada == sorteada:
-    print("Acertou!!!")
+    print("Acertou!!! a palavra é", digitada)
 else:
     print("Errou!!! a palavra era", sorteada)
