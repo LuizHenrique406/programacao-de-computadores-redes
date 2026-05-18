@@ -43,4 +43,3 @@ if num_usuario != num_sorte:
                 print("Acertou na última, hein? Grande sorte!")
             if num_usuario != num_sorte:
                 print("Errado! Fim de Jogo! O número era", num_sorte)
-
