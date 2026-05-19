@@ -1,7 +1,10 @@
+print("Ese programa encontra os dois digítos verificadores do seu CPF")
+
 cpf1 = int(input("Digite seu CFP: "))
 soma1 = 0
 soma2 = 0
 cpf2 = cpf1
+
 for m in range(2,11):
     n1 = cpf1 % 10
     soma1 = soma1 + (n1 * m)
@@ -26,4 +29,4 @@ if dv2 >= 2:
 else:
     dv2 = 0
 
-print(f"O seus dois útilmos digitos verficadores são, repectivamente, {dv1} e {dv2}")
+print(f"O seus dois digitos verficadores são, repectivamente, {dv1} e {dv2}")

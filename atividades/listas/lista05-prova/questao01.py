@@ -1,4 +1,4 @@
-print("Esse prgrama lhe aprensenta um menu")
+print("Esse programa lhe aprensenta um menu")
 
 opcao = 0
 num_div = 0
