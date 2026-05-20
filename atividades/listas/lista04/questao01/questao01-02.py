@@ -2,6 +2,7 @@ print("Esse programa acha o número primo na posição 137")
 
 contagem_num = 0
 ndiv = 0
+num = 0
 
 while contagem_num < 137:
     div = 1
