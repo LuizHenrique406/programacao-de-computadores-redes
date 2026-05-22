@@ -3,6 +3,7 @@ print("Esse programa lhe aprensenta um menu")
 opcao = 0
 num_div = 0
 soma_num = 0
+
 while opcao != 5:
     print("1. Múltiplos de 3 e 5")
     print("2. soma")
@@ -19,7 +20,7 @@ while opcao != 5:
 
         if opcao == 1:
             for o in range(intervalo1, intervalo2 + 1):
-                if o % 3 == 0 and o % 5 == 0:
+                if (o % 3 == 0) and (o % 5 == 0):
                     print(f"{o} é divísivel por 3 e 5")
 
         if opcao == 2:
@@ -30,8 +31,9 @@ while opcao != 5:
 
         if opcao == 3:
             for t in range(intervalo1, intervalo2 + 1):
-                if t % 3 == 0:
-                    num_div = num_div + 1          
+                if (t % 3 == 0):
+                    num_div = num_div + 1
+                              
             print(f"Há {num_div} de dvisores por 3 nesse intervalo")
 
     if opcao == 4:
