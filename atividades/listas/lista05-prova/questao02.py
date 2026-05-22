@@ -11,10 +11,10 @@ for m in range(3,11):
 
 soma = soma + (dv1 * 2)
 
-dv1 = soma % 11
-if dv1 >= 2:
-    dv1 = 11 - dv1
+dv2 = soma % 11
+if dv2 >= 2:
+    dv2 = 11 - dv2
 else:
-    dv1 = 0
+    dv2 = 0
 
-print(f"O seu segundo digito verificador é {dv1}")
+print(f"O seu segundo digito verificador é {dv2}")

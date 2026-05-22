@@ -20,9 +20,12 @@ while opcao != 5:
 
         if opcao == 1:
             for o in range(intervalo1, intervalo2 + 1):
-                if (o % 3 == 0) or (o % 5 == 0):
-                    print(f"{o} é divísivel por 3 e 5")
-
+                if (o % 3 == 0):
+                    print(f"{o} é divísivel por 3")
+                else:
+                    if (o % 5 == 0):
+                        print(f"{o} é divísivel por 5")
+                        
         if opcao == 2:
             for w in range(intervalo1, intervalo2 + 1):
                 soma_num = soma_num + w
