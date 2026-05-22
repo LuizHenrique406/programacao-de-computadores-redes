@@ -20,7 +20,7 @@ while opcao != 5:
 
         if opcao == 1:
             for o in range(intervalo1, intervalo2 + 1):
-                if (o % 3 == 0) and (o % 5 == 0):
+                if (o % 3 == 0) or (o % 5 == 0):
                     print(f"{o} é divísivel por 3 e 5")
 
         if opcao == 2:
@@ -33,7 +33,7 @@ while opcao != 5:
             for t in range(intervalo1, intervalo2 + 1):
                 if (t % 3 == 0):
                     num_div = num_div + 1
-                              
+
             print(f"Há {num_div} de dvisores por 3 nesse intervalo")
 
     if opcao == 4:
