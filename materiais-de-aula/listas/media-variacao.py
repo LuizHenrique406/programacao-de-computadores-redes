@@ -5,6 +5,7 @@ variancia = 0
 x = int(input("Digite um número: "))
 z = [x]
 b = []
+
 while x > 0:
     soma += x
     x = int(input("Digite um número: "))
