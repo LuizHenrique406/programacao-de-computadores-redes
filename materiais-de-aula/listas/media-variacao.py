@@ -1,22 +1,23 @@
 print("Esse programa calcula a variância")
 
-qtde = 0
 soma = 0
 variancia = 0
 x = int(input("Digite um número: "))
 z = [x]
-
+b = []
 while x > 0:
     soma += x
-    qtde += 1
     x = int(input("Digite um número: "))
     z.append(x)
 
-media = soma / qtde
+media = soma / len(z)
 
 for i in z:
-    variancia += (i - media) ** 2
+    a = (i - media) ** 2
+    b.append(a)
 
-variancia = variancia / qtde
+v = sum(b)
+
+variancia = v / len(z)
 
 print(f"{variancia:.2f}")
