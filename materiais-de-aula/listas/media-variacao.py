@@ -21,4 +21,4 @@ v = sum(b)
 
 variancia = v / len(z)
 
-print(f"{variancia:.2f}")
+print(f"A variância é {variancia:.2f}")
