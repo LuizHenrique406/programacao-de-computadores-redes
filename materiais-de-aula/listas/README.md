@@ -16,19 +16,19 @@ x = 3
 - l[x] = l[x - 1] -> l[3] = 3.5 -> l[5, 3, 3.5, 3.5, 14]
 - l[x] = l[x - 1] + l[x + 1] -> l[3] = l[2] + l[4] -> l[3] = 17.5 -> l[5, 3, 3.5, 17.5, 14]
 ### Acesso a todos os elementos:
-- usado para saber os elementos da lista:
-for x in l:
-    print(x)
-5
-3
-3.5
-17.5
-14
-- usado para saber os elementos e as posições desses elementos:
-for i in range (len(l)):
-    print(i, l[i])
-0 5
-1 3
-2 3.5
-3 17.5
-4 14
+#### usado para saber os elementos da lista:
+- for x in l:
+-    print(x)
+- 5
+- 3
+- 3.5
+- 17.5
+- 14
+#### usado para saber os elementos e as posições desses elementos:
+- for i in range (len(l)):
+-    print(i, l[i])
+- 0 5
+- 1 3
+- 2 3.5
+- 3 17.5
+- 4 14
