@@ -6,7 +6,7 @@
 ### Adição de elementos na lista
 - l.append (12)
 - print(l) = [5, 3, 4.2, 9, 12]
-### Atualizição de elemento da lista
+### Atualização de elemento da lista
 - posições dos elementos = 0, 1... -> índice
 - l[2] = 3.5 = [5, 3, 3.5, 9, 12]
 ### Uso de índices:
