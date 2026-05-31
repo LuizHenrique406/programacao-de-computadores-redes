@@ -2,7 +2,9 @@ import math
 print("Esse programa lhe aprensenta um menu")
 
 opcao = 0
+
 while opcao != 3:
+    
     print("1. Capitalização Acumulada")
     print("2. Tempo em que a Dívida chega a um valor")
     print("3. Sair")
