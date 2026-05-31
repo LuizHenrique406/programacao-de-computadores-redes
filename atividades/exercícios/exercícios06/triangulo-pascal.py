@@ -2,8 +2,8 @@ print("Esse programa lhe apresenta linhas do Triângulo de Pascal")
 print()
 print("Pode ser 0, caso deseje")
 linha = int(input("Digite quantas linhas que deseja do Triângulo: "))
-quant = 0
 
+quant = 0
 l = [1]
 out = []
 
