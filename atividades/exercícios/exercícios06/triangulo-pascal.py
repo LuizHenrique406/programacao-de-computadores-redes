@@ -1,20 +1,16 @@
 print("Esse programa lhe apresenta linhas do Triângulo de Pascal")
 print()
 print("Pode ser 0, caso deseje")
-linha = int(input("Digite quantas linhas que deseja do Triângulo: "))
+linha = int(input("Digite quantas linhas que deseja do Triângulo de Pascal: "))
 
 quant = 0
 l = [1]
-out = []
+print(l)
 
-if linha == 0:
-    print(l)
-    
-while linha > quant:
-    if quant == 0:
-        print(l)
+for _ in range(linha):
 
-    out.append(1)
+    out = [1]
+
     for i in range(len(l) - 1):
         x = l[i] + l[i + 1]
         out.append(x)
@@ -23,4 +19,3 @@ while linha > quant:
     print(out)
     l = out[:]
     out.clear()
-    quant += 1
