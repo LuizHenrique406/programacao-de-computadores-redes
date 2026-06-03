@@ -2,16 +2,32 @@ str_uf        = 'Alagoas;Bahia;Ceará;Maranhão;Paraíba;Pernambuco;Piauí;Rio G
 str_siglas    = 'AL;BA;CE;MA;PB;PE;PI;RN;SE'
 str_populacao = '3365351;14985284;9240580;7153262;4059905;9674793;3289290;3560903;2338474'
 
-str_uf = str_uf.split("; ")
-str_siglas = str_siglas.split("; ")
-str_populacao = str_populacao.split("; ")
+str_uf = str_uf.split(";")
+str_siglas = str_siglas.split(";")
+str_populacao2 = str_populacao.split(";")
+
+uf = 0
+siglas = 0
+populacao = []
+
+for i in str_populacao2:
+    x = int(i)
+    populacao.append(x)
 
 max = 0
+pos = 0
 
-for i in range(len(str_populacao) - 1):
-    if str_populacao[i] > str_populacao[i + 1]:
-        max = str_populacao[i]
-    else:
-        max = str_populacao[i + 1]
-print(str_populacao)
-print(max)
+for i in range(len(populacao)):
+    if i > max:
+        max = populacao[i]
+        pos = i
+
+for i in range(len(str_uf)):
+    if i == pos:
+        uf = str_uf[i]
+
+for i in range(len(str_siglas)):
+    if i == pos:
+        siglas = str_siglas[i]
+
+print(f"O estado que possui maior população é {uf} com a sigla {siglas}, com populaão de {max}")
