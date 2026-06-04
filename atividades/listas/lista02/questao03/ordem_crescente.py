@@ -16,4 +16,4 @@ for i in range(len(valores)):
     valor = valores[i]
     
 
-print(ordem)
+print(f"A a ordem ficou: {ordem}")
