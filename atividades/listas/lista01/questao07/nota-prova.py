@@ -10,9 +10,10 @@ prova1 = (prova1 * 70) / 100
 unidade1 = traba1 + prova1
 
 traba2 = (traba2 * 30) / 100
-unidade2 = traba2 
 
-prova2 = ((unidade1 * 40  + unidade2 * 60) / 100) - 60
+unidade2 = traba2
+
+med_final = ((unidade1 * 40  + unidade2 * 60) / 100)
 
 
-print(f"A nota que você precisa tirar na última prova é {prova2}")
+print(f"A nota que você precisa tirar na última prova é {med_final}")
