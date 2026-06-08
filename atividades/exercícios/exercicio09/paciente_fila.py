@@ -6,7 +6,6 @@ while opcao != 4:
     print("3. Registrar desistência de paciente")
     print("4.Sair")
     opcao = int(input("Digite a sua opcão: "))
-
     if opcao == 1:
         if len(paciente) == 10:
             print("A fila esta cheia!!!")
@@ -23,6 +22,8 @@ while opcao != 4:
         print(paciente)
     if opcao == 3:
         nome = str(input("Digite o seu nome: "))
+        #if nome in paciente:
+            #paciente.remove(nome) pode ser assim tbm, mas é melhor a parte difícil
         for i in range(len(paciente)):
             if nome == paciente[i]:
                 paciente.remove(nome)
@@ -31,6 +32,4 @@ while opcao != 4:
             print(paciente)
         else:
             print("Nome não encontrado!!!")
-        print(paciente)
-
 print("Clínica fechada!!!")
