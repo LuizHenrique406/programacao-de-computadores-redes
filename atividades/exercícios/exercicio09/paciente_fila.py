@@ -9,6 +9,7 @@ while opcao != 4:
     if opcao == 1:
         if len(paciente) == 10:
             print("A fila esta cheia!!!")
+            print()
         else:
             nome = str(input("Digite o seu nome: "))
             if nome in paciente:
