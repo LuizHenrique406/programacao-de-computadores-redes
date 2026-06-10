@@ -7,7 +7,7 @@ c = int(input("Qual o valor do lado c?: "))
 if a == b and b == c and c == a:
     print("Esse triãngulo é Equilátero")
 
-if a != b or b != c:
+if (a == b or b == c or c == a or c == b) and (a != b or b != c or c != b or c != a):
     print("Esse triângulo é Isósceles")
 
 if a != b and b != c and c != a:
