@@ -1,0 +1,1 @@
+### Vou guardar aqui algumas práticas do contéudo de matemática discreta

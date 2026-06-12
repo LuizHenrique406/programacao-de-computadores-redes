@@ -1,0 +1,1 @@
+# Umas práticas bem nada a ver mesmo, só o easy ;)
