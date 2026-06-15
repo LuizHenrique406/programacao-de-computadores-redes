@@ -34,14 +34,9 @@ print (f"O texto tem {len(palavras)} palavras!")
 contagem = {}
 for palavra in palavras:
     contagem[palavra] = contagem.get(palavra,0) + 1
-x = 2
-z = []
+x = 0
+z = {}
 for valor in contagem.values():
-    if valor > x or valor == x:
-        x = valor
-        z.append(x)
-print(z)
-for i in z:
-    for palavra in contagem:
-        if i == contagem[palavra]:
-            print(palavra)
+    if valor > x:
+        z[valor] = z.get(valor)
+print(max(z))
