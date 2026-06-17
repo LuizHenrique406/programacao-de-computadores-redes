@@ -41,5 +41,4 @@ for palavra in contagem:
         mais_rep = valor
         quant_rep = mais_rep
         palavra_mais_rep = palavra
-
 print(palavra_mais_rep, quant_rep)
