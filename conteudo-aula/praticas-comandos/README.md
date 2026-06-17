@@ -1,4 +1,4 @@
-# Repositório destinado a pequenas práticas
+# Diretório destinado a pequenas práticas
 
 > Resoluções de problemas com comandos específicos
 
