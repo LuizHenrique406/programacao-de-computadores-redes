@@ -15,4 +15,3 @@ if opcao == 1:
     print(f"{calcular_total(valor_conta, gorgeta)}")
 if opcao == 2:
     print(f"{calcular_total(valor_conta)}")
-
