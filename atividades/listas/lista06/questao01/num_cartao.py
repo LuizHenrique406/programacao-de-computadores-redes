@@ -41,14 +41,3 @@ def num_cartao(num_srt):
 
 num = str(input("Digite 14 digitos: "))
 print(num_cartao(num))
-
-# receber primeiro uma sequência de caracteres
-# depois usar um for in range e caminhar nessas caracteres
-# verificar se o índice é par ou ímpar
-# se for ímpar, colocar na lista "impar", depois somar essa lista e colocar o resultado na lista "total"
-# se for par, multiplicar por 2 e depois ver se é menor ou igual a 9
-# se for menor, colocar na lista "par"
-# se for maior, pegamos esse resultado e convertemos para str
-# após converter, criar uma novo variável, transforma essa str em lista e colocar ela nessa nova variável
-# depois, usar um for pegando essas str, converter essas strs para int, criar uma nova lista e appendar esses ints nessa lista
-# depois utilizar um for somando o primeiro índice com o segundo índice
