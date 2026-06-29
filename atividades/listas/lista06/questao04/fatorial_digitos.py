@@ -4,3 +4,4 @@ def fatorial(n):
         num.append(i)
     num = sorted(num, reverse = True)
     num.remove(0)
+    
