@@ -1185,22 +1185,50 @@ logs = '''
 13/Nov/2017:21:34:15 -0200 64.39.102.157 - - - /examples/jsp/moin_static182/modern/css/print.css 404 GET /examples/jsp/moin_static182/modern/css/print.css HTTP/1.1 127.0.0.1 201.21.193.172 80 1099 ajp-8009-2 0
 13/Nov/2017:21:34:15 -0200 64.39.102.157 - - - /examples/moin_static193/modernized/css/SlideShow.css 404 GET /examples/moin_static193/modernized/css/SlideShow.css HTTP/1.1 127.0.0.1 201.21.193.172 80 1111 ajp-8009-2 0
 13/Nov/2017:21:34:15 -0200 64.39.102.157 - - - /examples/moin_static182/modern/css/print.css 404 GET /examples/moin_static182/modern/css/print.css HTTP/1.1 127.0.0.1 201.21.193.172 80 1087 ajp-8009-2 0'''
-# a)
-print(f"Foram capturados {len(logs.split("13/Nov/2017"))} registros")
+# # a)
+# print(f"Foram capturados {len(logs.split("\n"))} registros")
 
-# b)
-print(f"Houveram {len(logs.split("200 GET"))} acessos com o código de resultado 200")
-# c)
-print(f"Teve {len(logs.split("GET"))} acessos com códgigos diversos")
+# # b)
+# print(f"Houveram {len(logs.split("200 GET"))} acessos com o código de resultado 200")
+# # c)
+# print(f"Teve {len(logs.split("GET"))} acessos com códgigos diversos")
 # d)
 ### tem uma forma melhor de fazer esse, vou ver depois
-print(f"Houve {len(logs.split(":21:22:"))} no minuto 22")
-print(f"Houve {len(logs.split(":21:23:"))} no minuto 23")
-print(f"Houve {len(logs.split(":21:28:"))} no minuto 28")
-print(f"Houve {len(logs.split(":21:29:"))} no minuto 29")
-print(f"Houve {len(logs.split(":21:30:"))} no minuto 30")
-print(f"Houve {len(logs.split(":21:31:"))} no minuto 31")
-print(f"Houve {len(logs.split(":21:33:"))} no minuto 33")
-print(f"Houve {len(logs.split(":21:34:"))} no minuto 34")
+list_logs = logs.split("\n")
+dia_hora = []
+for i in list_logs:
+    letras1 = ""
+    for e in i:
+        if e != " ":
+            letras1 = letras1 + e
+        else:
+            dia_hora.append(letras1)
+            break
+horas = []
+for i in dia_hora:
+    letras2 = ""
+    x = True
+    for e in i:
+        if e == ":" or x == True:
+            letras2 = letras2 + i
+    horas.append(letras2)
+print(horas)
+
+
+
+        
+
+
+
+
+
+# print(f"Houve {len(logs.split(":21:22:"))} no minuto 22")
+# print(f"Houve {len(logs.split(":21:23:"))} no minuto 23")
+# print(f"Houve {len(logs.split(":21:28:"))} no minuto 28")
+# print(f"Houve {len(logs.split(":21:29:"))} no minuto 29")
+# print(f"Houve {len(logs.split(":21:30:"))} no minuto 30")
+# print(f"Houve {len(logs.split(":21:31:"))} no minuto 31")
+# print(f"Houve {len(logs.split(":21:33:"))} no minuto 33")
+# print(f"Houve {len(logs.split(":21:34:"))} no minuto 34")
 # e)
-print(f"Houve {len(logs.split("passwd"))} registros com o nome passwd")
+# print(f"Houve {len(logs.split("passwd"))} registros com o nome passwd")
