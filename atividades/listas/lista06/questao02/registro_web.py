@@ -1200,21 +1200,15 @@ for i in list_logs:
     letras1 = ""
     for e in i:
         if e != " ":
-            letras1 = letras1 + e
+            letras1 += e
         else:
             dia_hora.append(letras1)
             break
 horas = []
 for i in dia_hora:
-    letras2 = ""
-    x = True
-    for e in i:
-        if e == ":" or x == True:
-            letras2 = letras2 + i
-    horas.append(letras2)
-print(horas)
-
-
+    hora = i[12: -1]
+    horas.append(hora)
+    
 
         
 

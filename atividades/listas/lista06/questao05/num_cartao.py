@@ -3,7 +3,6 @@ def num_cartao(num):
     pares_srt = []
     pares_int = []
     impares_int = []
-    converor = 0
     num_para_srt = 0
     guardar_num_srt = 0
     list_2num_srt = 0
@@ -16,11 +15,9 @@ def num_cartao(num):
         else:
             impares_str.append(num[i])
     for i in pares_srt:
-        converor = int(i)
-        pares_int.append(converor)
+        pares_int.append(int(i))
     for i in impares_str:
-        converor = int(i)
-        impares_int.append(converor)
+        impares_int.append(int(i))
     for i in pares_int:
         pares_srt = []
         if i * 2 <= 9:
@@ -30,8 +27,7 @@ def num_cartao(num):
             guardar_num_srt = str(num_para_srt)
             list_2num_srt = list(guardar_num_srt)
             for i in list_2num_srt:
-                converor = int(i)
-                total += converor
+                total += int(i)
     total += sum(impares_int)
     if total % 10 == 0:
         return total, "Número de cartão válido"
