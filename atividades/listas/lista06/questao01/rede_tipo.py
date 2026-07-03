@@ -3,7 +3,6 @@ rede = socket.gethostbyname_ex(socket.getfqdn())
 endere_rede = []
 ips_srt = []
 ips_int = []
-convresor = 0
 # bloco split; organizando as strings
 for i in rede:
     endere_rede.append(i)
@@ -15,8 +14,7 @@ for i in endere_rede:
 for i in ips_srt:
     lista_reseva = []
     for e in i:
-        convresor = int(e)
-        lista_reseva.append(convresor)
+        lista_reseva.append(int(e))
     ips_int.append(lista_reseva)
 # bloco de classificação
 for i in ips_int:
