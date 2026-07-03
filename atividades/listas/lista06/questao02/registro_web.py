@@ -1215,7 +1215,6 @@ for i in dia_hora:
 
 
 
-
 # print(f"Houve {len(logs.split(":21:22:"))} no minuto 22")
 # print(f"Houve {len(logs.split(":21:23:"))} no minuto 23")
 # print(f"Houve {len(logs.split(":21:28:"))} no minuto 28")
