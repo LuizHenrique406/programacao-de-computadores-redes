@@ -12,20 +12,22 @@ def soma_fatoriais_digitos(numero):
     str_numero = str(numero)
     soma = 0
     for i in str_numero:
-        conversor = int(i)
-        multi = fatorial(conversor)
-        soma += multi
+        soma += fatorial(int(i))
     return soma
 def verificar_curiosidade(numero):
     resultado_soma = soma_fatoriais_digitos(numero)
     if numero == resultado_soma:
-        return True
+        return [numero, True]
     else:
-        return False
+        return [False]
 def calcular_soma_total(limite):
+    validos = []
     nums = []
     for i in range(limite + 1):
-        if verificar_curiosidade(i) is True:
-            nums.append(i)
+            veri = verificar_curiosidade(i)
+            validos.append(veri)
+    for i in validos:
+        if len(i) == 2:
+            nums.append(i[0])
     return sum(nums)
 print(calcular_soma_total(10000))
