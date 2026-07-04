@@ -1186,7 +1186,8 @@ logs = '''
 13/Nov/2017:21:34:15 -0200 64.39.102.157 - - - /examples/moin_static193/modernized/css/SlideShow.css 404 GET /examples/moin_static193/modernized/css/SlideShow.css HTTP/1.1 127.0.0.1 201.21.193.172 80 1111 ajp-8009-2 0
 13/Nov/2017:21:34:15 -0200 64.39.102.157 - - - /examples/moin_static182/modern/css/print.css 404 GET /examples/moin_static182/modern/css/print.css HTTP/1.1 127.0.0.1 201.21.193.172 80 1087 ajp-8009-2 0'''
 # a)
-print(f"Foram capturados {len(logs.split('\n'))} registros")
+print(f"Foram capturados {len(logs.split('-0200'))} registros")
+# print(f"Foram capturados {len(logs.split('\n'))} registros") poderia ser dessa forma, mas o python não deixa, tentei uns dias atrás e funcionou normalmente, agora não mais :(
 # b)
 print(f"Houveram {len(logs.split('200 GET'))} acessos com o código de resultado 200")
 # c)
