@@ -27,13 +27,15 @@ while True:
     if posicao_y > 32000:
         leitura -= 0.1
     else:
-        leitura += 0. 
+        leitura += 0.1
     if leitura > 2:
         leitura -= 0.1
     elif leitura < 0:
         leitura += 0.1
+    
     if posicao_x > 35000:
-        ref = list(map(lambda x:x - soma, ref))
+        for i in range(len(ref)):
+            ref[i] += soma
         if ref[0] > 50:
             ref[0] -= 1
         if ref[1] > 40:
@@ -41,10 +43,14 @@ while True:
         if ref[2] > 35:
             ref[2] -= 1
         if ref[3] > 30:
-            ref[3] -= 1    
+            ref[3] -= 1
+        for i in range(0, 25):
+            np[i] = (0,0,0)
+        np.write()
         print(ref)
-    if posicao_x < 30000:
-        ref = list(map(lambda x:x + soma, ref))
+    elif posicao_x < 30000:
+        for i in range(len(ref)):
+            ref[i] -= soma
         if ref[0] < 25:
             ref[0] += 1
         if ref[1] <35:
@@ -52,8 +58,11 @@ while True:
         if ref[2] < 30:
             ref[2] += 1
         if ref[3] < 25:
-            ref[3] += 1    
-        print(ref) 
+            ref[3] += 1
+        for i in range(0, 25):
+            np[i] = (0,0,0)
+        np.write()
+        print(ref)
     if temperatura > ref[0] or temperatura == ref[0]:
         np[0] = (50,0,0)
     elif temperatura > ref[1] and temperatura < ref[0]:
