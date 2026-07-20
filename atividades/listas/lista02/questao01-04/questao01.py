@@ -1,4 +1,4 @@
-print("Esse programa simula um pago")
+print("Esse programa simula um pagamento")
 
 conta = float(input("Digite o valor da conta: "))
 pago = int(input("Digite o valor a ser dado: "))
