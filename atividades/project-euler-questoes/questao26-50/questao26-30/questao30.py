@@ -1,4 +1,4 @@
-print("Eesse programa ncontra a soma de todos os números que podem ser escritos como a soma das quintas potências de seus dígitos")
+print("Eesse programa encontra a soma de todos os números que podem ser escritos como a soma das quintas potências de seus dígitos")
 def pot_dig(n):
     nums = []
     soma = 0
